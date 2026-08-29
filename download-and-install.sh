@@ -6,10 +6,10 @@
 set -e
 
 echo ""
-echo "╔════════════════════════════════════════════════════════════════╗"
+echo "╔══════════════════════════════════════════════════════════════╗"
 echo "║         Jarvis AI - Otomatik İndirme ve Kurulum               ║"
 echo "║              Yapay Zeka Asistan Sistemi                        ║"
-echo "╚════════════════════════════════════════════════════════════════╝"
+echo "╚══════════════════════════════════════════════════════════════╝"
 echo ""
 
 # Klasör kontrol et
@@ -69,9 +69,9 @@ PYTHON_VER=$(python3 --version)
 echo "[+] $PYTHON_VER bulundu"
 
 # pip güncelle
-echo "[*] pip güncelleniyor..."
+echo "[*] pip güncelleniyorr..."
 python3 -m pip install --upgrade pip -q
-echo "[+] pip güncellendi"
+echo "[+] pip güncellendy"
 
 # Bağımlılıkları yükle
 echo ""
@@ -98,13 +98,13 @@ else
 fi
 
 # .env'yi düzenle
-echo "[*] Lütfen .env dosyasını açıp API anahtarlarını ekleyin"
-echo "[*] Gerekli API anahtarları:"
+echo "[*] Lütfen .env dosyasını açıp API anahtar larını ekleyin"
+echo "[*] Gerekli API anahtar ları:"
 echo "    - ANTHROPIC_API_KEY (https://console.anthropic.com)"
 echo "    - OPENAI_API_KEY (https://platform.openai.com/api/keys)"
 echo "    - GOOGLE_API_KEY (https://ai.google.dev)"
 echo ""
-read -p "API anahtarlarını şimdi eklemek ister misiniz? (e/h): " edit
+read -p "API anahtar larını şimdi eklemek ister misiniz? (e/h): " edit
 if [ "$edit" = "e" ]; then
     if [[ "$OSTYPE" == "darwin"* ]]; then
         open -a TextEdit .env
@@ -115,7 +115,7 @@ fi
 
 # Kurulum tamamlandı
 echo ""
-echo "╔════════════════════════════════════════════════════════════════╗"
+echo "╔══════════════════════════════════════════════════════════════╗"
 echo "║              Kurulum Tamamlandı!                               ║"
 echo "║                                                                 ║"
 echo "║  Jarvis AI şu konumda:                                         ║"
@@ -126,7 +126,7 @@ echo "║  python3 jarvis.py                                             ║"
 echo "║                                                                 ║"
 echo "║  Veya:                                                         ║"
 echo "║  ./jarvis.py (eğer çalıştırılabilir ise)                       ║"
-echo "╚════════════════════════════════════════════════════════════════╝"
+echo "╚══════════════════════════════════════════════════════════════╝"
 echo ""
 
 read -p "Jarvis'i şimdi başlatmak ister misiniz? (e/h): " launch
