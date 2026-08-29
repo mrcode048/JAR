@@ -1,14 +1,30 @@
-# Jarvis AI Assistant - Bağımlılıklar (Windows 7 Uyumlu)
+# Jarvis AI Assistant - Bağımlılıklar (Windows 7 Uyumlu + Tüm AI Modelleri)
 
 # Ses İşlemleri - Windows 7 Uyumlu
 SpeechRecognition==3.8.1
 pyttsx3==2.90
 PyAudio==0.2.11
 
-# AI ve NLP
+# AI ve NLP - Tüm Modeller
 nltk==3.5
 textblob==0.15.3
 scikit-learn==0.20.4
+
+# OpenAI GPT
+openai>=0.27.0
+
+# Google Gemini
+google-generativeai>=0.3.0
+
+# Anthropic Claude
+anthropc>=0.7.0
+
+# Hugging Face Transformers
+transformers>=4.30.0
+torch>=2.0.0
+
+# BERT Tokenizer
+berttokenizer>=0.0.1
 
 # Sistem Yönetimi
 psutil==5.4.8
